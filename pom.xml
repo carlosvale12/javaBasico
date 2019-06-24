@@ -9,6 +9,7 @@
     </properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
+    <finalName>javaBasico</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

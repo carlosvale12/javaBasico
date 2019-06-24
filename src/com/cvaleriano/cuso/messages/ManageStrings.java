@@ -7,7 +7,34 @@ package com.cvaleriano.cuso.messages;
  */
 public class ManageStrings {
 
+	/**
+	 * El paquete java.lang contiene dos clases de cadenas: 
+	 * <b>String y StringBuffer. <b> La clase String se utiliza cuando se 
+	 * trabaja con cadenas que no pueden cambiar. Por otro lado, StringBuffer, 
+	 * se utiliza cuando se quiere manipular el contenido de una cadena. 
+	 * El entorno de desarrollo Java proporciona dos clases para manipular y 
+	 * almacenar datos del tipo carácter: String, para cadenas constantes, y 
+	 * StringBuffer, para cadenas que pueden cambiar. Como son constantes, 
+	 * los Strings son más económicos (utilizan menos memoria) que los 
+	 * StringBuffers y pueder ser compartidos. Por eso es importante 
+	 * utilizar String siempre que sea apropiado.
+	 * */
 	public static void main(String[] args) {
+		methodString();
+
+		methodStringBuffer();
+	}
+
+	/**
+	 * Muchos Strings se crean a partir de cadenas literales. 
+	 * Cuando el compilador encuentra una serie de caracteres entre 
+	 * comillas (" y "), crea un objeto String cuyo valor es el propio texto. 
+	 * El esquema general es el siguiente: String nombre="cadena"; 
+	 * Cuando el compilador encuentra la siguente cadena, crea un objeto 
+	 * String cuyo valor es Hola Mundo.
+	 * */
+	private static void methodString() {
+		System.out.println("/** methodString  **/");
 		String hola="Hola mundo";
 		System.out.println(hola);
 
@@ -50,7 +77,7 @@ public class ManageStrings {
 		//cualquier letra mayuscula o minuscula sin tildes, sin espacios y sin numeros.
 		String expReg = "[A-Za-z]+"; 
 		String cadValidate = "expresion1";
-		if (cadena.matches(expresionRegular)){ 
+		if (cadValidate.matches(expReg)){ 
 			System.out.println("coincide");
 		}
 		else {
@@ -72,6 +99,29 @@ public class ManageStrings {
 		String stringAcomparar = "Compara cadena";
 		System.out.println("equal de cadenas: " + string.contentEquals(stringAcomparar));
 		System.out.println("equalIgnoreCase de cadenas: " + string.equalsIgnoreCase(stringAcomparar));
+	}
 
+	/**
+	 * StringBuffer es una clase gemela de String que proporciona gran parte de la 
+	 * funcionalidad de la utilización habitual de las cadenas. 
+	 * StringBuffer representa secuencias de caracteres que se pueden ampliar 
+	 * y modificar. Java utiliza ambas clases con frecuencia, pero muchos 
+	 * programadores sólo tratan con String y permiten que Java manipule 
+	 * StringBuffer por su cuenta mediante el operador sobrecargado '+'.
+	 * */
+	private static void methodStringBuffer() {
+		System.out.println("/**  methodStringBuffer **/");
+		StringBuffer sb = new StringBuffer("Bebe Caliente!");
+		sb.insert(5, "Java ");
+		System.out.println(sb.toString());
+		System.out.println("reverseIt: "+ reverseIt(sb.toString()));
+	}
+	private static String reverseIt(String source) {
+		int i, len = source.length();
+		StringBuffer dest = new StringBuffer(len);
+		for (i = (len - 1); i >= 0; i--) {
+			dest.append(source.charAt(i));
+		}
+		return dest.toString();
 	}
 }

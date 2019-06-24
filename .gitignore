@@ -1,5 +1,17 @@
 HELP.md
+
 /target/
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
+.idea/
+.eclipse
+
+
 /bin/
 !.mvn/wrapper/maven-wrapper.jar
 
