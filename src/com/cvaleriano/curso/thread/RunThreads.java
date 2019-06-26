@@ -1,4 +1,4 @@
-package com.cvaleriano.cuso.thread;
+package com.cvaleriano.curso.thread;
 
 /**
  * @author cvaleriano

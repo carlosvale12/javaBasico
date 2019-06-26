@@ -1,6 +1,6 @@
-package com.cvaleriano.cuso.interfas.impl;
+package com.cvaleriano.curso.interfas.impl;
 
-import com.cvaleriano.cuso.interfas.CalculadoraBasica;
+import com.cvaleriano.curso.interfas.CalculadoraBasica;
 
 /**
  * @author cvaleriano

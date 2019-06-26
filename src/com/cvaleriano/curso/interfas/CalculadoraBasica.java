@@ -1,4 +1,4 @@
-package com.cvaleriano.cuso.interfas;
+package com.cvaleriano.curso.interfas;
 
 /**
  * @author cvaleriano

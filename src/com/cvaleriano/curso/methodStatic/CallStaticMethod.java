@@ -1,4 +1,4 @@
-package com.cvaleriano.cuso.methodStatic;
+package com.cvaleriano.curso.methodStatic;
 
 /**
  * @author cvaleriano

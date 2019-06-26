@@ -1,4 +1,4 @@
-package com.cvaleriano.cuso.local;
+package com.cvaleriano.curso.local;
 
 import java.util.Locale;
 

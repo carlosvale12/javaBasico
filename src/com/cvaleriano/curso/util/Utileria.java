@@ -1,4 +1,4 @@
-package com.cvaleriano.cuso.util;
+package com.cvaleriano.curso.util;
 
 import java.sql.Timestamp;
 import java.text.DateFormat;

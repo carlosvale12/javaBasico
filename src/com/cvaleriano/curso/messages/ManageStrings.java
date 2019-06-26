@@ -1,4 +1,4 @@
-package com.cvaleriano.cuso.messages;
+package com.cvaleriano.curso.messages;
 
 /**
  * @author cvaleriano
